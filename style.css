@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none;
+}
+
+:focus {
+  border: 2px solid #5e5e5e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/*  
+#container {
+  max-width: 100rem;
+  width: 100%;
+}   */
+
+#wrapper {
+  padding: 2rem 6rem;
+}
+
+/* HEADER STYLING */
+
+.header {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(3, 3, 164);
+  color: white;
+}
+
+.nav_section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 10px 120px;
+  padding-top: 20px;
+}
+
+.nav_section h1 {
+  font-weight: 500;
+}
+
+.wallet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 20px 120px;
+}
+
+.wallet h2 {
+  font-size: 20px;
+  font-weight: 200;
+}
+.wallet h3 {
+  font-size: 20px;
+  font-weight: 200;
+  word-spacing: 10px;
+}
+
+.face_id {
+  margin: 20px 120px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.face_asterisk {
+  word-spacing: 3px;
+}
+
+.face_id .face_eye {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.button {
+  margin: 10px 120px;
+  align-items: center;
+}
+
+.btn {
+  height: 50px;
+  margin-top: 20px;
+  width: 15%;
+  background-color: rgba(209, 71, 147, 0.981);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 23px;
+  word-spacing: 1px;
+  cursor: pointer;
+
+}
+
+.button i {
+  font-size: 30px;
+}
+
+
+/* UPGRADE CONTAINER STYLING */
+
+.upgrade{
+  height: 85px;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  margin-top: 20px;
+  border-radius: 10px 60px 10px 10px;
+  background-color: rgb(187, 206, 236);
+  padding-left: 45px;
+}
+
+.upgrade h1{
+  color:rgb(3, 3, 164);
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+.upgrade h2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 200;
+  color:rgb(3, 3, 164);
+ 
+}
+
+.upgrade i{
+  padding-right: 30px;
+ }
+
+
+ /* SUGGESTION BOX STYLING */
+ .suggestion{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .suggestion h1{
+  color: black;
+  font-weight: 400;
+  font-size: 25px;
+ }
+
+ .suggestion h2{
+   color:rgb(3, 3, 164);
+   font-size: 22px;
+   font-weight: 400;
+  cursor: pointer;
+
+ }
+
+ .suggestion i{
+  font-size: 18px;
+ }
+
+
+ .suggest_boxs{
+   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+ }
+
+ .suggest_box{
+  margin-top: 20px;
+  width:100%;
+  height: 190px;
+  background-color: rgb(231, 229, 227);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+border-radius: 10px;
+box-shadow: 0px 0px 3px #202020;
+
+ }
+
+ .suggest_box i{
+  font-size: 80px;
+  margin-top: 20px;
+  color:rgb(3, 3, 164);
+
+ }
+
+ .suggest_box h2{
+  font-size:22;
+  font-weight: 400;
+  margin-top: 10px;
+ }
+
+
+
+ 
+.Help{
+  height: 85px;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  margin-top: 20px;
+  border-radius: 10px 60px 10px 10px;
+  background-color: rgb(187, 206, 236);
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+.Help h1{
+  color:rgb(3, 3, 164);
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+
+
+}
+
+.Help h2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 200;
+  color:rgb(3, 3, 164);
+  cursor: pointer;
+
+ 
+}
+
+.Help i{
+  padding-right: 30px;
+ }
+
+ .RRR{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+ }
+
+ .RRR h1{
+   color: black;
+  font-weight: 400;
+  font-size: 25px;
+ }
+
+
+ .RRR h2{
+  color:rgb(3, 3, 164);
+   font-size: 22px;
+   font-weight: 400;
+ }
+
+
+
+ /* RESPONSIVENESS */
+
+ @media screen and (max-width: 667px) {
+ .button .btn{
+  font-size: 8px;
+  width: 26%;
+ }
+  }
+
+  
+ 
